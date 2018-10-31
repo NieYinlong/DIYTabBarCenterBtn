@@ -23,7 +23,6 @@
 		22193D562174826300375857 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22193D552174826300375857 /* HomeViewController.m */; };
 		22193D582174858E00375857 /* centerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 22193D572174858E00375857 /* centerIcon.png */; };
 		22193D5A2174894100375857 /* centerIcon_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 22193D592174894100375857 /* centerIcon_gray.png */; };
-		22CFA4CA218715020096534F /* NYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CFA4C9218715020096534F /* NYLTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +74,6 @@
 		22193D552174826300375857 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		22193D572174858E00375857 /* centerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = centerIcon.png; sourceTree = "<group>"; };
 		22193D592174894100375857 /* centerIcon_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = centerIcon_gray.png; sourceTree = "<group>"; };
-		22CFA4C8218715020096534F /* NYLTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYLTabBar.h; sourceTree = "<group>"; };
-		22CFA4C9218715020096534F /* NYLTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYLTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +167,6 @@
 			children = (
 				22193D442174725300375857 /* YLTabBar.h */,
 				22193D452174725300375857 /* YLTabBar.m */,
-				22CFA4C8218715020096534F /* NYLTabBar.h */,
-				22CFA4C9218715020096534F /* NYLTabBar.m */,
 				22193D4E2174814800375857 /* YLTabBarController.h */,
 				22193D4F2174814800375857 /* YLTabBarController.m */,
 				22193D512174820B00375857 /* BaseNavigationController.h */,
@@ -328,7 +323,6 @@
 				22193D212174722700375857 /* main.m in Sources */,
 				22193D462174725300375857 /* YLTabBar.m in Sources */,
 				22193D532174820B00375857 /* BaseNavigationController.m in Sources */,
-				22CFA4CA218715020096534F /* NYLTabBar.m in Sources */,
 				22193D562174826300375857 /* HomeViewController.m in Sources */,
 				22193D502174814800375857 /* YLTabBarController.m in Sources */,
 				22193D4A217473D300375857 /* UIView+Category.m in Sources */,
@@ -501,7 +495,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "自定义tabbar/PrefixHeader.pch";
 				INFOPLIST_FILE = "自定义tabbar/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -510,6 +506,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyl.---tabbar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -518,7 +515,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "自定义tabbar/PrefixHeader.pch";
 				INFOPLIST_FILE = "自定义tabbar/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -527,6 +526,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyl.---tabbar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

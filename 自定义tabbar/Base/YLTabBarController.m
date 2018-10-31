@@ -10,12 +10,12 @@
 #import "YLTabBar.h"
 #import "BaseNavigationController.h"
 #import "HomeViewController.h"
-#import "NYLTabBar.h"
+
 
 @interface YLTabBarController ()<YLTabBarDelegate>
 
 @property (nonatomic, strong) YLTabBar *ylTabBar;
-@property (nonatomic, strong) NYLTabBar *nylTabBar;
+
 
 @end
 
@@ -32,8 +32,6 @@
 
     //kvo形式添加自定义的 UITabBar
     [self setValue:self.ylTabBar forKey:@"tabBar"];
-    
-//    [self setValue:self.nylTabBar forKey:@"tabBar"];
 }
 
 - (YLTabBar *)ylTabBar {
@@ -44,14 +42,6 @@
         _ylTabBar.tabDelegate = self;
     }
     return _ylTabBar;
-}
-
-// 第二种方法
-- (NYLTabBar *)nylTabBar {
-    if (!_nylTabBar) {
-        _nylTabBar = [[NYLTabBar alloc] init];
-    }
-    return _nylTabBar;
 }
 
 

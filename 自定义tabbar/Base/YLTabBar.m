@@ -18,7 +18,7 @@
 
 @implementation YLTabBar
 
-+(instancetype)instanceCustomTabBarWithType:(kTbaBarItemUIType)type{
++ (instancetype)instanceCustomTabBarWithType:(kTbaBarItemUIType)type{
     YLTabBar *tabBar = [[YLTabBar alloc] init];
     tabBar.type = type;
     return tabBar;
